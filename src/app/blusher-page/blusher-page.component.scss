@@ -1,0 +1,21 @@
+:host
+{
+    .carousel-rows-data
+    {
+        color: gray;
+        .carousel-trigger-container
+        {
+            font-size: 21px;
+            font-weight: 500;
+        }
+        .carousel-content
+        {
+            background: #f9f5f5;
+            border-bottom: 3px solid orange;
+        }
+        .hidden
+        {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+:host{
+    .app-container
+    {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        .app-wrapper
+        {
+            width: 1440px;
+        }
+        .navigation-menu-container
+        {
+
+            color: white;
+            .navigation-menu-links
+            {
+                background: rgba(0,0,0,0.4);
+            }
+            .menu-btns
+            {
+                font-size: 18px;
+                font-weight: 600;
+                &.active-page
+                {
+                    border-bottom: 1px solid;
+                }
+            }
+            .page-title
+            {
+                top: 50%;
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+}

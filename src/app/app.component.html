@@ -1,0 +1,22 @@
+<div class="app-container d-flex justify-content-center">
+  <div class="app-wrapper">
+    <div class="navigation-menu-container position-relative">
+      <div class="navigation-menu-links position-absolute d-flex align-items-center justify-content-center py-3 w-100">
+        <div class="col-md-6 col-sm-6 d-flex justify-content-between">
+          <div *ngFor="let menu of pageData, let i=index" class="menu-btns cursor-pointer"
+            [class.active-page]="activePageIndex == i" (click)="setActivePage(i)">
+            {{menu.name}}
+          </div>
+        </div>
+      </div>
+      <div *ngIf="activePageData" class="active-page-info">
+        <div class="page-title position-absolute text-center w-100">
+          {{activePageData.name}}
+          <!-- <span>keyboard_arrow_down</span> -->
+        </div>
+        <img src="../assets/{{activePageData.image}}">
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
