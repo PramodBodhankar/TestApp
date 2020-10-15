@@ -41,7 +41,10 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
     this.activePageData = this.defaulPageData;
-    console.log(this.activeRoute);
+    // console.log(this.activeRoute);
+    // this.activeRoute.params.subscribe((params) => {
+    //   console.log(params);
+    // });
   }
   setActivePage(index) {
     this.activePageIndex = index;
